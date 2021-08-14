@@ -472,4 +472,4 @@ def createBanner(content, blank_symbol, filled_symbol):
 		
 	outputPrint(final_print, len(content), blank_symbol)
 		
-createBanner("Hello World"," ", "#")
+#createBanner("Hello World"," ", "#")

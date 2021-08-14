@@ -362,9 +362,23 @@ z_table = [
 None
 ]
 
+space_table = [
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+None
+]
+
 final_print = []
 
-tables = [a_table, b_table, c_table, d_table, e_table, f_table, g_table, h_table, i_table, j_table, k_table, l_table, m_table, n_table, o_table, p_table, q_table, r_table, s_table, t_table, u_table, v_table, w_table, x_table, y_table, z_table]
+tables = [a_table, b_table, c_table, d_table, e_table, f_table, g_table, h_table, i_table, j_table, k_table, l_table, m_table, n_table, o_table, p_table, q_table, r_table, s_table, t_table, u_table, v_table, w_table, x_table, y_table, z_table, space_table]
 letter_width = 8 # Don't change this, this is how many characters are in a line before creating a new one
 
 def outputPrint(table, out_len, blank_symbol):
@@ -453,7 +467,9 @@ def createBanner(content, blank_symbol, filled_symbol):
 			printLetter(24, blank_symbol, filled_symbol)
 		elif x == "z":
 			printLetter(25, blank_symbol, filled_symbol)
+		elif x == " ":
+			printLetter(26, blank_symbol, filled_symbol)
 		
 	outputPrint(final_print, len(content), blank_symbol)
 		
-createBanner("HELLO"," ", "#")
+createBanner("Hello World"," ", "#")

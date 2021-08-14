@@ -12,6 +12,8 @@ And then to call it run:
 `createBanner("Hello World", " ", "@")`
 (`createBanner(Message, Blank Symbol, Filled Symbol)`)
 
+## Notes
+  ###### As of right now, if the window size is too small, the message will appear weird. It may also look strange in Web IDEs but with Visual Studio Code I encountered no issues
 
 
 

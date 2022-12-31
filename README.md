@@ -1,3 +1,5 @@
+# ❗This is a few years old and no longer maintained
+
 # Python Banner
 Python Banner is an open source project to display strings in a big banner like way using non-unicode characters.
 This module is fully customizeable and can be used with one import and one function call.
